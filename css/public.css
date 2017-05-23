@@ -1,0 +1,129 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+
+/*这里先写出头部的布局*/
+#head_all{width:100%;height:62px;}
+#head{width: 1195px;height: 62px;margin: 0 auto;overflow: hidden;}
+/*这里是该着设置头部的格式了,先设置头部左边的*/
+#head .head_left{width: 640px;height: 62px;float: left;}
+#head .head_right{width: 555px;height: 62px;float: left;}
+/*设置左边的内容*/
+#head .head_left ul li {float: left;padding: 0 12px;color: #999;line-height: 36px;background: url(../img/head_left_bg.jpg) no-repeat right;}
+#head .head_left ul li span{color: #ff0000;}
+#head #head_left_last{background: none;}
+/*设置右边了该着*/
+#head .head_right .head_right_top{width: 555px;height: 40px;}
+#head .head_right .head_right_top li{line-height: 36px;float: left;padding: 0 12px;background: url(../img/head_left_bg.jpg) no-repeat right;}
+#head .head_right .head_right_top li a{color: #999;}
+#head .head_right .head_right_top ul{float: right;}
+#head .head_right .head_right_top li a:hover{text-decoration: underline;}
+#head #head_right_last{background: none;}
+/*这里开始写右边的下面的那个搜索表格内容了*/
+#head .head_right_bottom{height: 22px;width: 555px;}
+#head .head_right_bottom form{width: 150px;height: 20px;border: 1px solid #959595;float: right;}
+#head .head_right_bottom #submitSearch{width: 20px;height: 20px;background: url(../img/searchButton.jpg) no-repeat right center;float: left;outline: none;}
+#head .head_right_bottom #textSearch{width: 120px;height: 20px;float: left;color: #a9a9a9;padding-left: 10px;outline: none;}
+
+
+/*这里是logo部分*/  
+.logoAll{height: 80px;}
+.logo{height: 80px;width: 173px;margin: 0 auto;}
+.logo img{width:173px;height: 50px;}
+
+
+.navAll{width:100%;height:26px;}
+.nav{width:1200px;height: 26px;line-height: 26px;margin: 0 auto;}
+.nav  li{float: left;margin: 0 15px;position: relative;}
+.nav  a{color: #61696c;}
+.nav  a:hover{color: #000;}
+.nav  li i {position: absolute;right: -15px;top: 0;}
+.navLeft{float: left;}
+.navRight{float: right;}
+
+/*nav导航下面那个可以一拉就出来的那个*/
+.goodsNavAll{height: 28px;width: 100%;}
+#goodsNav{height: 28px;width: 1200px;margin: 0 auto;line-height: 28px;position: relative;}
+#goodsNav li{cursor: pointer;text-align: center;}
+
+#goodsNav .ulLeft .diyige{padding-left:15px ;}
+#goodsNav #hideBox .diyige{padding-left:15px ;}
+
+#goodsNav .ulLeft li{float: left;width: 83px;}
+#goodsNav .ulRight li{float: left;width: 83px;}
+#goodsNav .ulLeft{float: left;}
+#goodsNav .ulRight{float: right;}
+#goodsNav a{color: #666877;}
+#goodsNav li i{display: inline-block;width: 7px;height: 4px; background: url(../img/boultBottom.jpg) no-repeat;}
+#goodsNav #colTiao{width: 1200px;overflow: hidden;}
+#hideBox{width: 1200px;position: absolute;top: 28px;left: 0;z-index: 20;background: #fff;display: none;height: 0px;overflow: hidden;}
+#hideBox ul li{float: left;width: 83px;height: 254px;}
+#hideBox a:hover{text-decoration: underline;}
+#hideBox a img{width: 355px;height: 254px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*这里开始写底部的啦*/
+.blackAll{background: #242424;height: 102px;padding-top: 88px;margin-top: 30px;}
+.black{margin: 0 auto;width: 1200px;}
+
+/*下面就是底部导航部分了*/
+.footerall{background: #242424;overflow: hidden;}
+.footer{overflow: hidden;width: 1200px;margin: 0 auto;padding-bottom: 28px;}
+.footer .footleft{width: 890px;float: left;padding-top: 20px;}
+.footleft li{float: left;width: 148px;}
+.footleft h3{color: #fff;line-height: 20px;}
+.footleft a{color: #93a0a8;line-height: 20px;}
+.footright{line-height: 20px;padding-top: 20px;width: 308px;float: right;}
+.pm1{color:#c5c9d5;}
+.pm2{color: #9b98ab;margin-bottom: 20px;}
+.tms{border: 1px solid #808080;background: #242424;color: #a0a0a0;width: 276px;height: 28px;padding-left: 5px;}
+.zdy{width: 54px;height: 30px;background: #fff;margin-top: 15px;color: #000;}
+
+
+/*最后的底部了啊*/
+.end{background: #242424;overflow: hidden;}
+.end ul{margin: 0 auto;width: 1000px;}
+.end li{float: left;line-height: 66px;padding: 0 18px;background: url(../img/bgline.jpg) no-repeat right;}
+.end li a{color: #606463;}
+.end .lizuihou{background: none;}
+.px1200{width: 1200px;overflow: hidden;margin: 0 auto;}
+.end p{line-height: 50px;color: #92979a;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+

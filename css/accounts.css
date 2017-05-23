@@ -1,0 +1,79 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+/*这里先写头部的吧*/
+.headBu{height: 89px;background: url(../img/headbgline.jpg) repeat-x;}
+.headBu img{margin:0 auto;}
+/*这里开始写中间的那一大堆,希望一晚上可以写完*/
+.allMessage{width: 1002px;margin: 0 auto;overflow: hidden;}
+.allMessage h3{line-height: 34px;font-size: 15px;color: #000;text-indent: 5px;border-bottom: 2px solid #000;}
+.redBloder{line-height: 32px;font-size: 14px;color: #f82d29;font-weight: bold;text-indent: 5px;}
+fieldset{border-color: #dedede;width: auto;overflow: hidden;padding-bottom: 37px;padding-left: 20px;margin-bottom: 10px;}
+#configure p span{font-weight: bold;font-size: 14px;}
+#configure p {line-height: 38px;color: #000;}
+#configure p a{color: #1685ee;text-decoration: underline;}
+#configure p .star{color: #fb4945;}
+input{border: 1px solid #8f9190;}
+#yourName{width: 82px;height: 20px;background: #fff;}
+#configure select{width: 118px;height: 18px;}
+#address{width: 306px;height: 20px;}
+.zdya input{height: 20px;width: 188px;}
+#saveMessa{width: 136px;height: 31px;border: 1px solid #e65d65;background: #e65d65;color: #fff;text-align: center;line-height: 31px;margin-left: 50px;cursor: pointer;border-radius: 5px;}
+
+#commodity h4{line-height: 46px;color: #000;font-size: 14px;font-weight: 600;}
+#commodity p select{width: 166px;height: 18px;}
+#commodity table{border: none;text-align: center;}
+#commodity table td{width: 150px;height:18px;}
+#commodity .peisong{padding-left: 55px;}
+.onlinePay{width: 900px;height: 65px;margin-left:45px ;border-bottom: 1px dashed #ccc;}
+.reality{width: 900px;height: 60px;margin-left:45px ;border-bottom: 1px dashed #ccc;padding-top: 5px;}
+.anyWay{width: 800px;height: 60px;float: right;padding-top: 5px;}
+.anyWay li{float: left;width: 400px;line-height: 30px;}
+.nowPaykuan{width: 800px;height: 50px;float: right;padding-top: 10px;}
+.nowPaykuan p{height: 20px;}
+.nowPaykuan .span12{float: right;}
+.nowPaykuan .span13{color: #ff020a;}
+#subPay{width: 188px;height: 33px;border-radius:5px ;background: #dd5b5d;border: none;cursor: pointer;color: #fff;margin: 20px 0 0 122px;}
+.pyl{text-align: right;}
+.pyl a{color: #727473;text-decoration: underline;}
+#commodity h4 .a00{margin-left:5px ;color: #383a39;font-size: 12px;text-decoration: underline;}
+#bill h4{line-height: 46px;color: #000;font-size: 14px;font-weight: 600;}
+#bill #result .res div{width: 120px;height: 34px;line-height: 34px;text-align: center;float: left;}
+#settlement .p9w{height: 38px;line-height: 38px;color: #000;font-weight: 600;}
+#settlement .settleHead{width: auto;overflow: hidden;padding-left:20px ;display: none;}
+.poi1{color: #808281;line-height: 22px;padding-left: 50px;}
+#trueMessage{width: 145px;height: 29px;background: #910122;border: none;color: #fff;margin-left: 160px;margin-top: 10px;cursor: pointer;font-size: 14px;}
+#settlement .beizhu{width: auto;overflow: hidden;padding-left: 60px;display: none;}
+#settlement .tianxie{width: 184px;height: 20px;}
+.pblod{font-weight: 600;}
+.star{color: red;}
+#bzQueRen{width: 145px;height: 29px;background: #8f0222;color: #fff;font-size:14px;text-align: center;line-height: 29px;margin: 15px 0 0 30px;cursor: pointer;box-shadow: 2px #ccc;border: none;}
+#Submitorders{width: 132px;height: 39px;background: #d95761;font-size: 14px;text-align: center;line-height: 39px;color: #fff;border: none;border-radius: 5px;margin: 20px auto;cursor: pointer;margin-left: 430px;}
+
+.res{width: 100%;overflow: hidden;}
+
+
+.aqwes{color: red;display: none;}
+
+
+
+
+
+/*这里先写了底部的一点点*/
+.footHight{height: 50px;border-top: 1px solid #B8B7BC;text-align: center;width: 100%;}
+.footHight p{line-height: 36px;color: #B8B7BC;}

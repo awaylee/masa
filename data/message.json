@@ -1,0 +1,26 @@
+[
+	{
+		"status":200,
+		"message":"sucess",
+		"data" : {
+			"phone" : "18428368504",
+			"nickname" : "大业",
+			"password" : "wozuishuai",
+			"sex" : "男",
+			"scroe" : 100,
+			"level" : "普通会员"
+		}
+	},
+	{
+		"status":200,
+		"message":"sucess",
+		"data" : {
+			"phone" : "18428368505",
+			"nickname" : "小业",
+			"password" : "wozuishuaima",
+			"sex" : "男",
+			"scroe" : 100,
+			"level" : "普通会员"
+		}
+	}
+]

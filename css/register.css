@@ -1,0 +1,71 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+
+/*这里开始写登录页面的中间部分,其实登录界面只有一个吧貌似*/
+
+.register{height: 565px;background: url(../img/reginerpic1.jpg) no-repeat center;}
+/*这里还要把底部的margin清除掉吗,因为之前写了*/
+
+.blackAll{margin-top: 0px;}
+
+/*这里继续写登录表单*/
+#form_register{height: 565px; overflow: hidden; margin: 0 auto;position: relative;}
+#login_in{
+	margin-top: 20px;
+	/*float: right;*/
+	position: absolute;
+	right: 12000px;
+	top: 0;
+	width: 270px;
+	height: 478px;
+	background: #f0f4fd;
+	padding-left: 30px;
+}
+#login_in a:hover{color: #30333a;}
+#login_in .wj{color: #838788;}
+#login_in .mc{color: #a04d61;}
+.tishiBox{color: #bf3036;height: 20px;}
+.laT{display: none;}
+.notYOU{display: none;}
+/*这里开始具体些布局了*/
+#login_in h3{line-height: 68px;font-size: 16px;}
+#IDtext,#passwordText{padding-left: 10px; width: 242px;height: 33px;border: 1px solid #838788;margin-bottom: 10px;}
+.ppy{line-height: 21px;}
+.dl{width: 140px;height: 36px;border-radius: 5px;background: #dc4e4d;font-size: 16px;line-height: 36px;text-align: center;color: #fff;cursor: pointer;margin: 9px 0 35px 0;}
+
+.context{width: 240px;overflow: hidden;border-top:1px solid #d7dbde;}
+.context p{line-height: 60px;color: #848587;}
+.context ul li{float: left;width: 60px;height: 66px;text-align: center;}
+.context ul li a {line-height: 24px;color: #727272;}
+.context .littleBoxPic{width: 60px;height: 24px;}
+.context .littleBoxPic .littleLogo{width: 24px;height: 24px;margin: 0 auto;background: url(../img/login_icon.png) no-repeat 0 0;}
+
+.context .littleBoxPic .l2{background-position:0 -34px;}
+.context .littleBoxPic .l3{background-position:0 -68px;}
+.context .littleBoxPic .l4{background-position:0 -102px;}
+.context .littleBoxPic .l5{background-position:0 -136px;}
+.context .littleBoxPic .l6{background-position:0 -170px;}
+.context .littleBoxPic .l7{background-position:0 -204px;}
+.context .littleBoxPic .l8{background-position:0 -238px;}
+
+
+
+
+
+

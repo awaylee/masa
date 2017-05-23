@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品清单</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="js/activityList.js" ></script>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/activityList.css" />
+	</head>
+	<body>
+		<!--这里是头部的信息-->
+		<div id="head_all">
+			<div id="head">
+				<div class="head_left">
+					<ul>
+						<li><span>30天</span>无障碍退换货</li>
+						<li><span>365天</span>客服</li>
+						<li>顺丰快递</li>
+						<li id="head_left_last">主力城市<span>次日送达</span></li>
+					</ul>
+				</div>
+				<div class="head_right">
+					<div class="head_right_top">
+						<ul>
+							<li><a href="register.html">用户登录</a></li>
+							<li id="head_right_last"><a href="apply.html">新用户注册</a></li>
+						</ul>
+					</div>
+					<div class="head_right_bottom">
+						<form>
+							<input type="submit" id="submitSearch" value=""/>
+							<input type="text" id="textSearch" placeholder="查找" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--这里是logo部分的信息-->
+		<div class="logoAll">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logor.jpg" />
+				</a>
+			</div>
+		</div>
+		
+		
+		
+		<!--这里是写导航栏的上半部分了-->
+		<div class="navAll">
+			<div class="nav">
+				<ul class="navLeft">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">POLO短T</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">男包</a></li>
+					<li><a href="javascript:;">休闲裤</a></li>
+					<li><a href="javascript:;">薄便装</a></li>
+					<li><a href="javascript:;">圆领短T</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">衬衫</a></li>
+					<li><a href="javascript:;">短衬</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">休闲鞋</a></li>
+					<li><a href="javascript:;">长T</a></li>
+					<li><a href="javascript:;">牛仔裤</a></li>
+					<li><a href="javascript:;">编织鞋</a></li>
+				</ul>
+				<ul class="navRight">
+					<li><a href="javascript:;">本周会员专享</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">断码清仓</a></li>
+					<li><a href="javascript:;">新品发布</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--这里是下面有动画效果的那个一上去就出来的nav-->
+		<div class="goodsNavAll">
+			<div id="goodsNav">
+				<!--<div id="colTiao">-->
+					<ul class="ulLeft">
+						<li class="diyige"><a href="javascript:;">T恤</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">衬衫</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">裤子</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">男鞋</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">外套</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">内衣</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">针织衫</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">皮包</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">皮带</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">饰品</a>
+							<i></i>
+						</li>
+					</ul>
+					<ul class="ulRight">
+						<li><a href="javascript:;">会员机制</a></li>
+						<li><a href="javascript:;">vivian女装</a></li>
+					</ul>
+				<!--</div>-->
+				<div id="hideBox">
+					<ul>
+						<li class="diyige">
+							<p><a href="javascript:;">圆领短T</a></p>
+							<p><a href="javascript:;">POLO短T</a></p>
+							<p><a href="javascript:;">长袖T恤</a></p>
+							<p><a href="javascript:;">打底衫</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">牛仔衬衫</a></p>
+							<p><a href="javascript:;">牛津纺/亚麻</a></p>
+							<p><a href="javascript:;">极简系列</a></p>
+							<p><a href="javascript:;">格纹系列</a></p>
+							<p><a href="javascript:;">品质系列</a></p>
+							<p><a href="javascript:;">短袖衬衫</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">休闲裤</a></p>
+							<p><a href="javascript:;">牛仔裤</a></p>
+							<p><a href="javascript:;">休闲短裤</a></p>
+							<p><a href="javascript:;">西裤</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">休闲鞋</a></p>
+							<p><a href="javascript:;">运动鞋</a></p>
+							<p><a href="javascript:;">正装鞋</a></p>
+							<p><a href="javascript:;">皮靴</a></p>
+							<p><a href="javascript:;">编织鞋</a></p>
+							<p><a href="javascript:;">凉鞋</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">个性便装</a></p>
+							<p><a href="javascript:;">皮衣</a></p>
+							<p><a href="javascript:;">时尚夹克</a></p>
+							<p><a href="javascript:;">冬装外套</a></p>
+							<p><a href="javascript:;">卫衣</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">男内衣</a></p>
+							<p><a href="javascript:;">家居服</a></p>
+							<p><a href="javascript:;">内裤</a></p>
+							<p><a href="javascript:;">袜子</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">长袖毛衫</a></p>
+							<p><a href="javascript:;">长袖开衫</a></p>
+							<p><a href="javascript:;">毛背心</a></p>
+							
+						</li>
+						<li>
+							<p><a href="javascript:;">包</a></p>
+							<p><a href="javascript:;">皮夹</a></p>
+							
+						</li>
+						<li>
+							<p><a href="javascript:;">正装皮带</a></p>
+							<p><a href="javascript:;">休闲皮带</a></p>
+						
+						</li>
+						<li>
+							<p><a href="javascript:;">围巾</a></p>
+							<p><a href="javascript:;">方巾</a></p>
+						</li>
+					</ul>
+					
+					<a style="float: right;" href="javascript:;"><img src="img/masa_nav_add1214.jpg" alt="" /></a>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<!--这里开始写banner内容-->
+		<div class="banner">
+			<img src="img/img001.jpg"/>
+		</div>
+		<!--这里是banner下面的bannerDis部分-->
+		<div class="bannerDis">
+			<img src="img/img002.jpg"/>
+		</div>
+		
+		<!--这里开始写三个产品的那个介绍了-->
+		<div class="lokList">
+			<img src="img/img1.jpg"/>
+			<!--这里面还得写点小的那个小的红色的价签-->
+			<ul>
+				<a href="javascript:;"><li><div class="areaText">￥229</div></li></a>	
+				<a href="javascript:;"><li><div class="areaText">￥229</div></li></a>	
+				<a href="javascript:;"><li class="lxlx"><div class="areaText">￥229</div></li></a>	
+			</ul>
+		</div>
+		<!--这里开始写一些小的盒子 用来展示有什么衣服的-->
+		<div class="exhibitionAll">
+			<div class="exhibition">
+				<ul class="addListw">
+					
+				</ul>	
+			</div>
+		</div>
+		<!--这里开始写下面那三个大块子-->
+		<div class="bigBox1">
+			<img src="img/img004.jpg" />
+		</div>
+		<div class="bigBox2">
+			<img src="img/img006.jpg"/>
+		</div>
+		<div class="bigBox3">
+			<img src="img/img007.jpg"/>
+			<div class="priceLittle">￥150</div>
+		</div>
+		<!--这里开始写底部的东西-->
+		<div class="exhibitionAll">
+			<div class="exhibition">
+				<ul>
+				<li><a href="javascript:;"><img src="img/19220_sts_1.jpg" alt="" /></a>
+					<p><a href="Description.html">超爽运动系列/coolmax面料/宝蓝/拼接/段彩纱/短袖T恤</a></p>	
+					<p class="Lee">￥249</p>	
+					<img class="beautiful" src="img/1113.png" alt="" />
+					</li>
+					<li><a href="javascript:;"><img src="img/19204_sts_1.jpg" alt="" /></a>
+					<p><a href="Description.html">超爽运动系列/coolmax面料/宝蓝/拼接/段彩纱/短袖T恤</a></p>	
+					<p class="Lee">￥249</p>	
+					<img class="beautiful" src="img/1113.png" alt="" />	
+					</li>
+					<li><a href="javascript:;"><img src="img/19205_sts_1.jpg" alt="" /></a>
+					<p><a href="Description.html">超爽运动系列/coolmax面料/宝蓝/拼接/段彩纱/短袖T恤</a></p>	
+					<p class="Lee">￥249</p>	
+					<img class="beautiful" src="img/1113.png" alt="" />	
+					</li>
+					<li><a href="javascript:;"><img src="img/19206_sts_1.jpg" alt="" /></a>
+					<p><a href="Description.html">超爽运动系列/coolmax面料/宝蓝/拼接/段彩纱/短袖T恤</a></p>	
+					<p class="Lee">￥249</p>	
+					<img class="beautiful" src="img/1113.png" alt="" />	
+					</li>
+					</ul>
+			</div>
+		</div>
+		<!--这里是点击加载更多-->
+		<div class="addOnLoading">
+			<a href="http://www.masamaso.com/vcategory.php?id=7167">点击查看更多短袖T恤>></a>			
+		</div>
+		
+		
+		
+		
+		
+		<!--这里开始写底部啦。开始-->
+		<div class="blackAll">
+			<div class="black">
+				<img src="img/changtu.jpg"/>
+			</div>
+		</div>
+		<!--下面就是底部导航部分了-->	
+		<div class="footerall">
+			<div class="footer">
+				<div class="footleft">
+					<ul>
+						<li>
+							<h3>新手指南</h3>
+							<p><a href="javascript:;">注册新用户</a></p>
+							<p><a href="javascript:;">网站订购流程</a></p>
+						</li>
+						<li>
+							<h3>售后服务</h3>
+							<p><a href="javascript:;">退换货政策</a></p>
+							<p><a href="javascript:;">鞋类三包政策</a></p>
+						</li>
+						<li>
+							<h3>客服中心</h3>
+							<p><a href="javascript:;">常见问题</a></p>
+							<p><a href="javascript:;">投诉与建议</a></p>
+						</li>
+						<li>
+							<h3>如何退款付款</h3>
+							<p><a href="javascript:;">支付方式及付款等待期限</a></p>
+							<p><a href="javascript:;">常见支付问题</a></p>
+						</li>
+						<li>
+							<h3>配送方式</h3>
+							<p><a href="javascript:;">配送方式及范围</a></p>
+							<p><a href="javascript:;">货到付款城市目录</a></p>
+							<p><a href="javascript:;">配送常见问题</a></p>
+						</li>
+						<li>
+							<h3>技术与服务</h3>
+							<p><a href="javascript:;">B2G仓储服务</a></p>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="footright">
+					<p class="pm1">订阅邮箱</p>
+					<p class="pm2">立即订阅，获得每日最新资讯</p>
+					<p><input class="tms" type="text" placeholder="请输入你的邮箱地址" /></p>	
+					<p><input class="zdy" type="submit" value="订阅" /></p>	
+				</div>
+			</div>
+		</div>
+		<!--下面就是那个最后的真正的底部了  啊啊哈哈哈哈哈哈好他妈开心 ，终于把结构写完了-->
+		<div class="end">
+			<div class="px1200">
+				<ul>
+					<li><a href="javascript:;">关于MasaMaso</a></li>
+					<li><a href="javascript:;">网站地图</a></li>
+					<li><a href="javascript:;">隐私条款</a></li>
+					<li><a href="javascript:;">企业订购</a></li>
+					<li><a href="javascript:;">加入我们</a></li>
+					<li><a href="javascript:;">帮助中心</a></li>
+					<li><a href="javascript:;">网站联盟</a></li>
+					<li><a href="javascript:;">友情链接</a></li>
+					<li><a href="javascript:;">总裁邮箱</a></li>
+					<li class="lizuihou"><a href="javascript:;">
+						<img src="img/integrity_logo.gif" style="width: 83px;height: 22px;display: inline-block;" />
+					</a></li>
+				</ul>
+			</div>
+			<p>Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号， 京ICP备09042941号-8， 北京市公安局朝阳分局备案编号：1101051120</p>
+		</div>
+		
+		<!--在这里把最左边的那个导航栏写了吧-->
+		<div id="lineNav">
+			<ul>
+				<li><a href="shoppingCar.html">购物车</a></li>
+				<li><a href="javascript:;">资产</a></li>
+				<li><a href="accounts.html">订单</a></li>
+				<li><a href="javascript:;">收藏</a></li>
+				<li><a href="javascript:;">手机</a></li>
+			</ul>	
+			<ul id="ul02">
+				<li><a href="javascript:;">客服</a></li>
+				<li id="topGo"><a href="javascript:;">Top</a></li>
+			</ul>		
+		</div>
+	</body>
+</html>

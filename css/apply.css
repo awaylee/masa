@@ -1,0 +1,76 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+/*//下面就是中间部分的内容了*/
+.applyId{width: 1200px;margin: 0 auto;overflow: hidden;}
+.applyIdLeft{width: 500px;height: 555px;float: left;padding-left: 50px;}
+.applyIdRight{width: 650px;height: 505px;float: left;padding-top: 50px;}
+
+.applyIdRight textarea{width: 434px;height: 138px;resize: none;}
+.applyIdRight h3{line-height: 80px;color: #000;font-weight: 600;}
+.applyIdRight li{color: #23282e;line-height: 20px;}
+
+.applyIdLeft .ljyp1{line-height: 64px;}
+.applyIdLeft .ljyp2{line-height: 36px;color: #828282;}
+
+.applyStyle{width: 550px;height: 35px;}
+.applyStyle .email,.phone {width: 133px;height: 33px;border: 1px solid #888;float: left;cursor: pointer;line-height: 33px;text-indent: 0.5em;margin-left: 25px;}
+.applyStyle .email div,.phone div{float: left;width: 35px;height: 33px;background: #888;}
+.applyStyle .email div{background: #888 url(../img/email_t1.png) no-repeat center;}
+.applyStyle .phone div{background: #888 url(../img/phone_t1.png) no-repeat center;}
+.applyStyle .phone{width: 133px;height: 33px;}
+.applyStyle .email{margin-left: 0;}
+.applyStyle .yue{border: 1px solid #753647;color: #753647;}
+.applyStyle .yue div{background-color:#753647 ;}
+
+.e_mail,#pass_word{width: 242px;height: 33px;border: 1px solid #848484;margin: 10px 0;}
+.threeLine{width: 240px;height: 34px;}
+.threeLine div{float: left;width: 80px;height: 34px;line-height: 28px;background: url(../img/bgbottomLine.jpg) repeat-x left bottom;text-align: center;}
+.threeLine .jia{background: url(../img/bglinebottom.jpg) repeat-x left bottom;}
+
+.ljyp3{line-height: 20px;}
+.sub_mit{width: 140px;height: 36px;color: #fff;background: #d44849;margin: 20px 0;font-size:16px;line-height: 36px;text-align: center;cursor: pointer;display: none;}
+.sub_mit1{width: 140px;height: 36px;color: #fff;background: #ccc;margin: 20px 0;font-size:16px;line-height: 36px;text-align: center;cursor: pointer;}
+
+
+.fom1{display: block;}
+.fom2{display: none;}
+
+.cure{color: #b53832;height: 12px;}
+.dyZ{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

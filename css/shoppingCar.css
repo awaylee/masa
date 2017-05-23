@@ -1,0 +1,74 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+/*这里先写头部的吧*/
+.headBu{height: 89px;background: url(../img/headbgline.jpg) repeat-x;}
+.headBu img{margin:0 auto;}
+
+/*下面开始写中间的车的部分了,*/
+
+.row{clear: both;}
+#clearall,#lookDelete{clear: both;}
+
+.mainCar{overflow: hidden;width: 1002px;margin: 0 auto;}
+.oldCar{width: 1000px;overflow: hidden;margin: 0 auto;border: 1px solid #dddddd;}
+.mainCar h3{height: 36px;line-height: 36px;color: #2e2e2e;font-size: 14px;border-bottom: 2px solid #000;}
+.mainCar .carHint{height: 32px;width: 1002px;color: #f32824;font-size: 14px;text-indent: 1em;line-height: 32px;}
+.mainCar .redHint{width: 558px;height: 20px;border: 1px solid #dedede;background: #f7f9f8;font-size: 12px;line-height: 20px;float: right;margin-top: 5px;}
+.mainCar .redHint span{float: right;text-align: center;width: 12px;text-indent: 0;cursor: pointer;}
+#carH .row{width: 1000px;overflow: hidden;}
+#carH{width: 1000px;overflow: hidden;border: 1px solid #f1f1f1;border-collapse: collapse;}
+#carH tr,td{border: 1px solid #f1f1f1;text-align: center;}
+#carH thead{background: #9e9e9e;color: #fff;height: 26px;}
+#carH thead,tbody .id{width: 66px;}
+#carH thead,tbody .name{width: 349px;overflow: hidden;}
+#carH thead,tbody .name img{margin: 0 auto;}
+#carH thead,tbody .name{line-height: 20px;}
+#carH thead,tbody .size{width: 76px;}
+#carH thead,tbody .price{width: 76px;}
+#carH thead,tbody .nowPrice{width: 81px;}
+#carH thead,tbody .anmout{width: 141px;}
+#carH thead,tbody .subtotal{width: 81px;}
+#carH thead,tbody .opa{width: 121px;}
+/*td{display: block;float: left;overflow: hidden;}*/
+#totalCass{width: 1002px;height: 55px;background: #e4e4e4;}
+#totalCass #clearall,#lookDelete,.spantt{line-height: 55px;margin: 0 15px;}
+#totalCass #huizong{width: 510px;height: 55px;float: right;}
+#totalCass #huizong li{width: 150px;float: left;line-height: 28px;color: #000;}
+#totalCass #huizong .lijia{font-weight: bold;width: 200px;}
+#litIdt{width: 300px;height: 20px;line-height: 20px;background: #f7f9f8;border: 1px solid #dcdedd;color: #757776;float: right;text-indent: 10px;margin: 10px 0;}
+#litIdt span{float: right;text-indent: 0;cursor: pointer;}
+.allwidth{width: 1000px;overflow: hidden;}
+#twoBox{width: auto;height: 39px;float: right;overflow: hidden;margin: 10px 0;}
+#twoBox a{display: block;width: 134px;height: 37px;line-height: 37px;text-align: center;font-size: 14px;float: left;border-radius: 5px;margin: 0 10px;}
+.ayme1{background: #e9d6d7;border: 1px solid #d0d0d0;color: #e84059;}
+.ayme2{background: #e35e5f;border: 1px solid #e35e5f;color: #ebf9ff;}
+			/*</div>
+			<div id="litIdt">已有账户请点此<a href="register.html">登录</a>；新用户请您继续正常结算<span>&times;</span></div>
+			<div id="twoBox">
+				<a href="index.html">继续购物</a>
+				<a href="accounts.html">去结算>></a>
+			</div>
+		</div>
+		*/
+.lefta,.righta{width: 20px;height: 20px;background: #ccc;display: inline-block;cursor: pointer;font-size: 20px;line-height: 20px;}
+.trMylo{display: none;}
+
+/*这里先写了底部的一点点*/
+.footHight{height: 50px;border-top: 1px solid #B8B7BC;text-align: center;position: fixed;bottom: 0;width: 100%;}
+.footHight p{line-height: 36px;color: #B8B7BC;}

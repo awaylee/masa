@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>结算页面</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="js/accounts.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/accounts.css" />
+	</head>
+	<body>
+		<div class="headBu">
+			<a href="index.html"><img src="img/masamasuoya.jpg" alt="" /></a>	
+		</div>
+		<!--下面是开始写订单首页了啊哈哈哈哈哈哈-->
+		<div class="allMessage">
+			<h3>结算步骤:&nbsp;我的购物车&nbsp;>>&nbsp;<span style="color: #FF2628;">结算中心&nbsp;</span>>>&nbsp;订单完成</h3>
+			<p class="redBloder">结算中心</p>
+			<fieldset id="configure">
+				<legend></legend>
+				<p><span>收货信息:&nbsp;&nbsp;&nbsp;</span>老用户请点此<a href="register.html">登录</a>,登录后将自动读取已有地址记录；新用户请填写以下信息继续购物;</p> 
+				<p><span>修改地址:&nbsp;&nbsp;&nbsp;</span>带<span class="star">*</span>为必填项</p>
+				<p><span class="star">*</span>收件人姓名:&nbsp;<input type="text" name="yourName" id="yourName" value="" /><i class="aqwes lqw1">请输入姓名</i></p>
+				
+				<p class="ddtmo"><span class="star">*</span>选择地区:&nbsp;&nbsp;&nbsp;
+				<select name="">
+					<option>请选择省</option>
+				</select>
+				<select name="">
+					<option>请选择市</option>
+				</select>
+				<select name="">
+					<option>请选择区</option>
+				</select>
+				<select name="">
+					<option>选择街道</option>
+				</select>
+				<span style="color: #ccc;">（可选）</span>
+				</p>
+				<p><span class="star">*</span>详细地址:&nbsp;&nbsp;&nbsp;
+					<input type="text" id="address" />
+					<i class="aqwes lqw2">请输入地址</i>
+				</p>
+				
+				<p class="zdya"><span class="star">*</span>手机号码:&nbsp;&nbsp;&nbsp;
+				<input type="text" name="phoneNumber" id="phoneNumber" value="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;或&nbsp;固定电话: <input type="text" name="diedPhone" id="diedPhone" value="" /><i class="aqwes lqw3">请输入手机号码</i>
+				</p>
+				
+				<p class="zdya">&nbsp;&nbsp;电子邮箱:&nbsp;&nbsp;&nbsp;
+				<input type="text" name="email" id="email" value="" />
+				QQ: <input type="text" name="QQ" id="QQ" value="" />
+				</p>
+				<input type="submit" name="" id="saveMessa" value="保存收货人信息" />
+				
+			</fieldset>
+			
+			<fieldset id="commodity">
+				<legend></legend>
+				<h4>配送方式</h4>
+				<p class="peisong">配送时间：
+				<select name="">
+					<option value="">随时（周1-周日）</option>
+					<option value="">2011年7月1号</option>
+					<option value="">2011年7月2号</option>
+					<option value="">2011年7月3号</option>
+					<option value="">2011年7月4号</option>
+					<option value="">2011年7月5号</option>
+					<option value="">2011年7月6号</option>
+					<option value="">2011年7月7号</option>
+				</select>
+				</p>
+				<table>
+					<tr>
+						<td>快递类型</td>
+						<td>快递费</td>
+						<td>预计送达天数</td>
+						<td>说明</td>
+					</tr>
+					<tr>
+						<td>普通快递</td>
+						<td>¥0</td>
+						<td>预计3-5天内</td>
+						<td>满200免运费</td>
+					</tr>
+				</table>
+				<h4>付款方式</h4>
+				<div class="onlinePay">
+					<input type="radio" name="likea" id="likea" value="" />&nbsp;&nbsp;线上付款
+					
+					<div class="anyWay">
+						<ul>
+							<li><span style="color: red;">享受额外商品9.8折优惠；</span>无手续费</li>
+							<li>“快捷支付”无需开通网上银行，可支持大额单次支付</li>
+							<li>网银支付：支持绝大多数银行卡在线支付</li>
+							<li>第三方支付平台：支付宝、快钱、财付通、手机支付、汇付天下</li>
+						</ul>
+					</div>
+				</div>
+				<div class="reality">
+					<input type="radio" name="likea" id="likea" value="" />&nbsp;&nbsp;货到付款
+					
+					<div class="nowPaykuan">
+						<p><input type="radio" name="notk" id="notk" value="" />现金<span class="span12">无手续费;</span></p>
+						<p><input type="radio" name="notk" id="notk" value="" />&nbsp;&nbsp;POS刷卡<span class="span13">&nbsp;&nbsp;(现仅支持北京、上海、广州、深圳、杭州)</span>
+						</p>
+					</div>
+				</div>
+				<p><input type="submit" name="subPay" id="subPay" value="确认付款方式及配送方式" /></p>
+				<p class="pyl"><a href="https://www.baidu.com">付款遇到问题？请点击这里</a></p>
+			</fieldset>
+			
+			<fieldset id="commodity">
+				<legend></legend>
+				<h4>商品信息<a class="a00" href="shoppingCar.html">修改</a></h4>
+				<table id="carH">
+					<thead class="row">
+						<tr>
+							<td class="id">款号</td>
+							<td class="name">商品</td>
+							<td class="size">尺寸</td>
+							<td class="price">原价</td>
+							<td class="nowPrice">现价</td>
+							<td class="anmout">数量</td>
+							<td class="subtotal">小计</td>
+						</tr>
+					</thead>
+					<tbody class="bolaa">
+					</tbody>
+				</table>
+			</fieldset>
+			
+			<fieldset id="bill">
+				<legend></legend>
+				<h4>结算信息</h4>
+				<div id="result">
+					<div class="res">
+						<div class="sYuan">商品原价</div>
+						<div class="addPri">+</div>
+						<div class="yFei">运费</div>
+						<div class="jianPri">-</div>
+						<div class="sZhe">商品折扣</div>
+						<div class="squel">=</div>
+						<div class="yFu">应付金额</div>						
+					</div>
+				</div>
+			</fieldset>
+			
+			<fieldset id="settlement">
+				<legend></legend>
+				<p class="p9w"><input type="checkbox" name="" id="faBot" value="" />&nbsp;&nbsp;&nbsp;发票</p>
+					<div class="settleHead">
+						<p class="pblod">发票抬头: <input type="text" name="" id="" value="" class="tianxie" />&nbsp;&nbsp;收货人的单位名称或个人姓名</p>
+						<p>发票内容: <span>服装</span></p>
+						<p class="poi1">温馨提示：您填写的所有内容都将被系统自动打印到发票上，所以请您不要填写和发票抬头无关的信息。</p>
+						<p class="poi1">发票信息一经提交将无法修改。</p>
+						<input type="submit" name="trueMessage" id="trueMessage" value="确认发票信息" />
+					</div>
+				<p class="p9w"><input type="checkbox" name="" id="luoBt" value="" />&nbsp;&nbsp;&nbsp;备注</p>
+				<div class="beizhu">
+					<p><input type="text" name="" id="" value="" class="tianxie" />
+					<span class="star">*提示：请勿填写有关支付、收货、发票方面的信息。</span>
+					</p>
+					<input type="submit" name="" id="bzQueRen" value="确认备注信息" />
+				</div>
+			</fieldset>
+			
+			<div id="Submitorders">提交订单</div>
+		</div>
+		
+		
+		
+		
+		<!--这里是开始写底部的东西了 哈哈哈哈-->
+		<div class="footHight">
+			<p>Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号</p>
+		</div>
+	</body>
+</html>

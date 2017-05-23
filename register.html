@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>	
+		<script type="text/javascript" src="js/register.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<!--这里是头部的信息-->
+		<div id="head_all">
+			<div id="head">
+				<div class="head_left">
+					<ul>
+						<li><span>30天</span>无障碍退换货</li>
+						<li><span>365天</span>客服</li>
+						<li>顺丰快递</li>
+						<li id="head_left_last">主力城市<span>次日送达</span></li>
+					</ul>
+				</div>
+				<div class="head_right">
+					<div class="head_right_top">
+						<ul>
+							<li><a href="register.html">用户登录</a></li>
+							<li id="head_right_last"><a href="apply.html">新用户注册</a></li>
+						</ul>
+					</div>
+					<div class="head_right_bottom">
+						<form>
+							<input type="submit" id="submitSearch" value=""/>
+							<input type="text" id="textSearch" placeholder="查找" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--这里是logo部分的信息-->
+		<div class="logoAll">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logor.jpg" />
+				</a>
+			</div>
+		</div>
+		
+		<!--这里先写出楼梯导航的上个导航-->
+		<!--<div id="floorTopall">
+			<div id="floorTop">
+				<ul>
+					<li class="nowLi">薄变装</li>
+					<li>长袖T恤</li>
+					<li>卫衣</li>
+					<li>西裤</li>
+					<li>休闲鞋</li>
+					<li>皮包</li>
+				</ul>
+			</div>
+		</div>-->
+		
+		<!--这里是写导航栏的上半部分了-->
+		<div class="navAll">
+			<div class="nav">
+				<ul class="navLeft">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">POLO短T</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">男包</a></li>
+					<li><a href="javascript:;">休闲裤</a></li>
+					<li><a href="javascript:;">薄便装</a></li>
+					<li><a href="javascript:;">圆领短T</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">衬衫</a></li>
+					<li><a href="javascript:;">短衬</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">休闲鞋</a></li>
+					<li><a href="javascript:;">长T</a></li>
+					<li><a href="javascript:;">牛仔裤</a></li>
+					<li><a href="javascript:;">编织鞋</a></li>
+				</ul>
+				<ul class="navRight">
+					<li><a href="javascript:;">本周会员专享</a>
+						<i><img src="img/hot.gif"/></i>
+					</li>
+					<li><a href="javascript:;">断码清仓</a></li>
+					<li><a href="javascript:;">新品发布</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--这里是下面有动画效果的那个一上去就出来的nav-->
+		<div class="goodsNavAll">
+			<div id="goodsNav">
+				<!--<div id="colTiao">-->
+					<ul class="ulLeft">
+						<li class="diyige"><a href="javascript:;">T恤</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">衬衫</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">裤子</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">男鞋</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">外套</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">内衣</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">针织衫</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">皮包</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">皮带</a>
+							<i></i>
+						</li>
+						<li><a href="javascript:;">饰品</a>
+							<i></i>
+						</li>
+					</ul>
+					<ul class="ulRight">
+						<li><a href="javascript:;">会员机制</a></li>
+						<li><a href="javascript:;">vivian女装</a></li>
+					</ul>
+				<!--</div>-->
+				<div id="hideBox">
+					<ul>
+						<li class="diyige">
+							<p><a href="javascript:;">圆领短T</a></p>
+							<p><a href="javascript:;">POLO短T</a></p>
+							<p><a href="javascript:;">长袖T恤</a></p>
+							<p><a href="javascript:;">打底衫</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">牛仔衬衫</a></p>
+							<p><a href="javascript:;">牛津纺/亚麻</a></p>
+							<p><a href="javascript:;">极简系列</a></p>
+							<p><a href="javascript:;">格纹系列</a></p>
+							<p><a href="javascript:;">品质系列</a></p>
+							<p><a href="javascript:;">短袖衬衫</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">休闲裤</a></p>
+							<p><a href="javascript:;">牛仔裤</a></p>
+							<p><a href="javascript:;">休闲短裤</a></p>
+							<p><a href="javascript:;">西裤</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">休闲鞋</a></p>
+							<p><a href="javascript:;">运动鞋</a></p>
+							<p><a href="javascript:;">正装鞋</a></p>
+							<p><a href="javascript:;">皮靴</a></p>
+							<p><a href="javascript:;">编织鞋</a></p>
+							<p><a href="javascript:;">凉鞋</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">个性便装</a></p>
+							<p><a href="javascript:;">皮衣</a></p>
+							<p><a href="javascript:;">时尚夹克</a></p>
+							<p><a href="javascript:;">冬装外套</a></p>
+							<p><a href="javascript:;">卫衣</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">男内衣</a></p>
+							<p><a href="javascript:;">家居服</a></p>
+							<p><a href="javascript:;">内裤</a></p>
+							<p><a href="javascript:;">袜子</a></p>
+						</li>
+						<li>
+							<p><a href="javascript:;">长袖毛衫</a></p>
+							<p><a href="javascript:;">长袖开衫</a></p>
+							<p><a href="javascript:;">毛背心</a></p>
+							
+						</li>
+						<li>
+							<p><a href="javascript:;">包</a></p>
+							<p><a href="javascript:;">皮夹</a></p>
+							
+						</li>
+						<li>
+							<p><a href="javascript:;">正装皮带</a></p>
+							<p><a href="javascript:;">休闲皮带</a></p>
+						
+						</li>
+						<li>
+							<p><a href="javascript:;">围巾</a></p>
+							<p><a href="javascript:;">方巾</a></p>
+						</li>
+					</ul>
+					
+					<a style="float: right;" href="javascript:;"><img src="img/masa_nav_add1214.jpg" alt="" /></a>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		<!--中间的登录界面-->
+		<div class="register">
+			<div id="form_register">
+				<div id="login_in">
+					<h3>会员登录</h3>
+					<form>
+						<p><input type="text" id="IDtext" placeholder="Email/手机号" />
+						<div class="tishiBox tishiId">
+							<div class="laT IdLed">
+							手机号或者Email不正确	
+							</div>
+							<div class="notYOU">
+							账号或密码不正确
+							</div>
+						</div>
+						</p>	
+						<p><input id="passwordText" type="password" placeholder="密码"/>
+						<div class="tishiBox tishiPas">
+							<div class="laT PsLed">
+							密码不能小于六位或者大于十六位
+							</div>
+							<div class="notYOU">
+							账号或密码不正确
+							</div>
+						</div>
+						</p>	
+						<p class="ppy">
+							<label><input style="cursor: pointer;vertical-align: middle;" type="checkbox" name="like" />记住用户名</label>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a class="wj" href="javascript:;" style="text-decoration: underline;">忘记密码?</a>
+							<span>丨</span>
+							<a class="mc" href="apply.html">免费注册</a>
+						</p>
+						<p><div class="dl">登录</div></p>
+					</form>
+					<div class="context">
+						<p>使用合作方登录</p>	
+						<ul>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l1"></div></div>腾讯QQ</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l2"></div></div>新浪微博</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l3"></div></div>支付宝</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l4"></div></div>开心网</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l5"></div></div>360</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l6"></div></div>人人网</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l7"></div></div>139邮箱</a></li>
+							<li><a href="javascript:;"><div class="littleBoxPic"><div class="littleLogo l8"></div></div>163邮箱</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--这里开始写底部啦。开始-->
+		<div class="blackAll">
+			<div class="black">
+				<img src="img/changtu.jpg"/>
+			</div>
+		</div>
+		<!--下面就是底部导航部分了-->	
+		<div class="footerall">
+			<div class="footer">
+				<div class="footleft">
+					<ul>
+						<li>
+							<h3>新手指南</h3>
+							<p><a href="javascript:;">注册新用户</a></p>
+							<p><a href="javascript:;">网站订购流程</a></p>
+						</li>
+						<li>
+							<h3>售后服务</h3>
+							<p><a href="javascript:;">退换货政策</a></p>
+							<p><a href="javascript:;">鞋类三包政策</a></p>
+						</li>
+						<li>
+							<h3>客服中心</h3>
+							<p><a href="javascript:;">常见问题</a></p>
+							<p><a href="javascript:;">投诉与建议</a></p>
+						</li>
+						<li>
+							<h3>如何退款付款</h3>
+							<p><a href="javascript:;">支付方式及付款等待期限</a></p>
+							<p><a href="javascript:;">常见支付问题</a></p>
+						</li>
+						<li>
+							<h3>配送方式</h3>
+							<p><a href="javascript:;">配送方式及范围</a></p>
+							<p><a href="javascript:;">货到付款城市目录</a></p>
+							<p><a href="javascript:;">配送常见问题</a></p>
+						</li>
+						<li>
+							<h3>技术与服务</h3>
+							<p><a href="javascript:;">B2G仓储服务</a></p>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="footright">
+					<p class="pm1">订阅邮箱</p>
+					<p class="pm2">立即订阅，获得每日最新资讯</p>
+					<p><input class="tms" type="text" placeholder="请输入你的邮箱地址" /></p>	
+					<p><input class="zdy" type="submit" value="订阅" /></p>	
+				</div>
+			</div>
+		</div>
+		<!--下面就是那个最后的真正的底部了  啊啊哈哈哈哈哈哈好他妈开心 ，终于把结构写完了-->
+		<div class="end">
+			<div class="px1200">
+				<ul>
+					<li><a href="javascript:;">关于MasaMaso</a></li>
+					<li><a href="javascript:;">网站地图</a></li>
+					<li><a href="javascript:;">隐私条款</a></li>
+					<li><a href="javascript:;">企业订购</a></li>
+					<li><a href="javascript:;">加入我们</a></li>
+					<li><a href="javascript:;">帮助中心</a></li>
+					<li><a href="javascript:;">网站联盟</a></li>
+					<li><a href="javascript:;">友情链接</a></li>
+					<li><a href="javascript:;">总裁邮箱</a></li>
+					<li class="lizuihou"><a href="javascript:;">
+						<img src="img/integrity_logo.gif" style="width: 83px;height: 22px;display: inline-block;" />
+					</a></li>
+				</ul>
+			</div>
+			<p>Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号， 京ICP备09042941号-8， 北京市公安局朝阳分局备案编号：1101051120</p>
+		</div>
+		
+		
+	</body>
+</html>

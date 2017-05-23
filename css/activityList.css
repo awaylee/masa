@@ -1,0 +1,66 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+
+
+/*这里开始写那个banner的内容这里是不可以点的哟*/
+.banner{height: 600px;overflow: hidden;position: relative;}
+.banner img{position: absolute;left: 50%;margin-left: -960px;}
+
+/*这里是bannerDis*/
+.bannerDis{height: 149px;position: relative;overflow: hidden;}
+.bannerDis img{position: absolute;left: 50%;margin-left: -960px;}
+
+/*这里是下面的那个三张图的*/
+.lokList{height: 722px;position: relative;overflow: hidden;}
+.lokList img{position: absolute;left: 50%;margin-left: -960px;}
+.lokList ul{width: 100%;height: 100%;position: relative;}
+.lokList ul li{width: 30%;height: 100%;float: left;margin-right: 5%;position: relative;overflow: hidden;cursor: pointer;}
+.lokList .lxlx{margin-right: 0;}
+.lokList .areaText{font-size: 14px;color: #de000c;width: 50px;height: 42px;position: absolute;left: 40%;bottom: 0;z-index: 3;}
+.lokList .lxlx .areaText{left: 30%;}
+
+/*下面开始写商品展示了*/
+.exhibitionAll{overflow: hidden;padding: 10px 0;}
+.exhibition{width: 1200px;margin: 0 auto;}
+.exhibition li{position: relative; float: left;width: 232px;height: 380px;margin-right: 8px;}
+.exhibition  li p{text-align: center;line-height: 16px;color: #de0000;}
+.exhibition a{color: #6a6a6a;}
+.exhibition a:hover{color: #000;text-decoration: underline;}
+.exhibition .Lee{font-size: 14px;line-height: 20px;}
+.exhibition .beautiful{position: absolute;left: 15px;top: 6px;}
+
+/*下面就是那些个大的盒子了*/
+.bigBox1{height: 720px; overflow: hidden;position: relative;}
+.bigBox1 img{position: absolute;left: 50%;margin-left: -960px;}
+.bigBox2{height: 122px; overflow: hidden;position: relative;}
+.bigBox2 img{margin: 0 auto;}
+.bigBox3{height: 720px;width: 1200px;margin: 10px auto;cursor: pointer;position: relative;}
+.bigBox3 .priceLittle{height: 24px;width: 46px;text-align: center;line-height: 24px;color: #dc0000;font-weight: bold;position: absolute;left: 67px;top: 546px;z-index: 2;font-size: 14px;}
+
+/*这里就是点击查看更多商品信息*/
+.addOnLoading{width: 100%;height: 40px;}
+.addOnLoading a{display: block;width: 100%;height: 38px;border: 1px dashed #ff2837;color: #ff2837;font-size: 16px;line-height: 38px;text-align: center;}
+
+
+
+/*这里是写最右边的那一个竖条的*/
+#lineNav{height: 100%;width: 36px;background: #1f2120;position: fixed;right: 0;top: 0;}
+#lineNav li{width: 36px;padding: 30px 0;}
+#lineNav li a{font-size: 12px;color: #fff;display: block;padding: 3px 12px;}
+#lineNav #ul02{position: absolute;bottom: 0;}

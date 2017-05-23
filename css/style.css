@@ -1,0 +1,158 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , input{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;font-weight: normal;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	display: block;border: 0;
+}
+a{
+	text-decoration: none;
+}
+input{border:0;}
+html,body{height:100%;width:100%;}
+
+/*这里把楼梯导航的上部分写了*/
+/*#floorTopall{width: 100%;background: #304269;height: 38px;display: none;position: absolute;left: 0;top: 0;}
+
+*/
+/*楼梯没那么简单,所以以上仅供粗略一看*/
+/*上面的楼梯代码不出意外就是作废了*/
+/*重新开始写楼梯吧*/
+#floorTopall{width: 100%;background: #304269;height: 30px;position: fixed;left: 0;top: 0;display: none;z-index: 300;}
+#floorTop{width: 1200px;height: 30px;margin: 0 auto;}
+#floorTop li{position: relative;}
+#floorTop .floorLeft li {float: left;line-height: 30px;width:63px; color: #fff;font-size: 12px;text-align: center;}
+#floorTop .floorRight li{float: left;line-height: 30px;width:83px; color: #fff;font-size: 12px;text-align: center;}
+#floorTop li a{color: #fff;display: block;width: 100%;height: 100%;}
+#floorTop .floorLeft{float: left;}
+#floorTop .floorRight{float: right;}
+#floorTop i{position: absolute;right: 0;top: 0;}
+/*#floorTop .nowLi{background: #fff;color: #f26101;}*/
+#floorTop li a:hover{background: #940403;}
+
+.zhuxiao li{cursor: pointer;}
+.zhuxiao{display: none;}
+
+
+
+
+
+
+
+/*轮播图部分现在是*/
+#carouselBox{width: 100%;height: 500px;position: relative;}
+#boxTop{width: 100%;height: 500px;}
+#boxTop img{width: 100%;height: 500px;}
+#boxTop li{position: absolute;opacity: 0;}
+#boxBottom{position: absolute;bottom: 13px;left: 30%;}
+#boxBottom li{width: 144px;height: 38px;border: 1px solid #fff;float: left;margin-right:13px ;cursor: pointer;}
+#boxBottom li img{width: 144px;height: 38px;}
+/*#carouselBox .active{display: block;}*/
+#boxBottom .showTime{border: 1px solid #9f5357;}
+
+/*下面的无缝轮播*/
+.messageAll{height:75px;padding-top:20px ;}
+#message{width: 1200px;height: 30px;background: #f2f2f2;margin: 0 auto;}
+.messageLeft{width:120px;height: 30px;float: left;line-height: 30px;text-align: center;color: #ff302a;}
+#messageLun{width: 1080px;position: relative;float: left;height: 30px;overflow: hidden;}
+#messageLun ul{position: absolute;left: 0;}
+#messageLun li{float: left;/*padding-right: 65px;*/width: 180px; line-height: 30px;}
+#messageLun li a{color: #5e6075;}
+#messageLun li .a1{color: #f80000;}
+
+/*风标那里其实就是一个小标题*/
+.windShow{width: 1200px;margin: 0 auto;}
+.windShow legend{color: #5f676a;font-size: 14px;}
+
+/*这里是那个比较复杂的效果的那个时尚风标*/
+.bigBox{width: 1200px;height: 465px;margin: 40px auto;position: relative;overflow: hidden; cursor: pointer;}
+.bigBox li{width: 140px;float: left;position: relative;overflow: hidden;height: 465px;}
+.bigBox .liNow{position:relative; width: 780px;height: 465px;}
+.bigBox .textBox{overflow: hidden;position: absolute; text-align: center;width: 140px;height: 257px;background: #f0f0f0;padding-top: 18px;right: 0;bottom: 0;}
+.bigBox .textBox h3{text-align: center;font-size: 18px;color: #322715;font-weight: 600;line-height: 34px;}
+.bigBox .textBox p{
+	text-align: left;
+	line-height: 22px;
+	color: #6b7376;
+	text-indent: 2em;
+}
+.bigBox li img{position: absolute;}
+.liNow img{left: -140px;}
+.btm{width: 100%;height: 50px;position: absolute;bottom: 0;}
+.bigBox .textBox a{
+	line-height: 42px;
+	color: #000500;
+	float: bottom;
+	font-weight:600 ;
+}
+.bigBox .WidthBox{width: 378px;height: 180px;right: 0;bottom: 20px;}
+
+/*这里是热销推荐的nav列表部分*/
+.hotSall{margin: 0 auto;width: 1200px;overflow: hidden;position: relative;height: 830px;}
+.hotSall #hotNav .shinebi a{color: #000;font-weight: bolder;}
+.hotSall #hotNav{overflow:hidden;padding-left: 350px;width: 850px;}
+.hotSall #hotNav li{float: left;line-height: 64px;padding: 0 15px;}
+.hotSall #hotNav li a{color: #786c70;}
+
+.hotSall .thingList li{float: left;margin-right: 10px;width: 232px;height: 383px;}
+.hotSall .thingList .lastPic{margin-right: 0;}
+.thingList p{width:232px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.hotSall .thingList p{line-height:19px ;text-align: center;}
+.hotSall .thingList p a{color: #6b616c;}
+.p1{margin-top: 18px;}
+.hotSall .thingList p2{color: #333136;font-weight: 600;}
+.hotSall .thingList p a:hover{text-decoration: underline;}
+
+.hotSall #nextBo{position: absolute;height: 766px;width: 8400px;left: 0;bottom: 0;}
+.hotSall #nextBo .thingList{float: left;width:1200px;}
+
+
+/*这里是活动专题*/
+
+.activetyTitle{cursor: pointer; width: 1200px;overflow: hidden;margin: 0 auto;position: relative;}
+.activetyTitle li{position: relative;float: left;margin-right:20px ;width: 386px;height: 386px;margin-top:20px ;overflow: hidden;}
+.activetyTitle .onlyone{width: 793px;height:386px;}
+.activetyTitle li img{width: 100%;height: 100%;}
+.activetyTitle .lifast{margin-right: 0;}
+
+.introduce{width: 230px;height: 70px;position: absolute;right: 0;bottom: 30px;text-align: center;cursor: pointer;background: #fff;opacity: 0.7;}
+.pp1{line-height: 22px;font-size: 14px;margin-top: 10px;color: #6c6471;}
+.pp2{line-height: 30px;font-size: 16px;color: #313527;font-weight: 600;}
+
+.bgreda{background: #FF6F6F;color: #fff;}
+.bgreda p{color: #fff;}
+/*下面开始写帅气大叔部分*/
+.fashional{width:1200px;overflow: hidden;margin: 0 auto;padding-bottom: 50px;position: relative;}
+.fashional .left{width: 1030px;position: relative;}
+.fashional li{width: 495px;margin-right: 20px;float: left;position: relative;height: 641px;}
+.fashional li img{ cursor: pointer;}
+.fashional .left h3{line-height: 70px;font-size:18px;color: #2a2a2a;}
+.fashional .left p{line-height: 22px;color: #626262;}
+.fashional .left a{position: absolute;bottom: 0;left: 0;color: #373924;}
+.fashional .left .litt{margin-right: 0;}
+.fashional .right{width: 162px;float: right;position: absolute;right: 0;top: 0;}
+
+
+/*这里是最后那一件衣服的地方*/
+.cloth{width: 1200px;margin: 0 auto;position: relative;overflow: hidden;height: 150px;cursor: pointer;}
+.cloth .jieshao{position: absolute;right: 165px;bottom: 25px;width: 360px;height: 100px;text-align: center;background: #fff;}
+.cloth .p_1{color: #87848b;font-size: 12px;line-height: 21px;margin-top: 27px;}
+.cloth .p_2{color: #3f2b20;font-size: 20px;}
+
+
+/*这里是写最右边的那一个竖条的*/
+#lineNav{height: 100%;width: 36px;background: #1f2120;position: fixed;right: 0;top: 0;}
+#lineNav li{width: 36px;padding: 30px 0;cursor: pointer;}
+#lineNav li a{font-size: 12px;color: #fff;display: block;padding: 3px 12px;}
+#lineNav #ul02{position: absolute;bottom: 0;}
+
+
+
+
+
